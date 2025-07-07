@@ -255,3 +255,15 @@
 
 
 })(jQuery);
+
+window.addEventListener('scroll', (e) => {
+  const header = document.getElementById('header')
+  if (window.scrollY <= 10) {
+    header.classList.remove('landing_header-bar');
+    header.classList.remove('slideInDown');
+  }
+  if (window.scrollY >= 900) {
+    header.classList.add('landing_header-bar');
+    header.classList.add('slideInDown');
+  }
+});

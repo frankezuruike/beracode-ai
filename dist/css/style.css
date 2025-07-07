@@ -205,6 +205,32 @@ header .navbar.navbar-light .nav-link.active {
   color: #fff;
 }
 
+#header.landing_header-bar {
+  position: fixed;
+  background-color: white;
+  transition: transform 1s ease-out;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 99;
+}
+
+.slideInDown {
+  -webkit-animation: slideInDown 0.5s ease-in-out;
+  animation: slideInDown 0.5s ease-in-out;
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .site-hero .btn:hover {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
